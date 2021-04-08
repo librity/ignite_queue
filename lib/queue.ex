@@ -12,7 +12,8 @@ defmodule Queue do
       :world
 
   """
-  def hello do
-    :world
-  end
+
+  defdelegate initialize_queue(initial_queue), to: Queue.Sever, as: :start_link
+  defdelegate enqueue(pid, element), to: Queue.Sever
+  defdelegate dequeue(pid), to: Queue.Sever
 end
