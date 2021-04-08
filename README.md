@@ -10,7 +10,7 @@
 
 ## About <a name = "about"></a>
 
-Am implementation of queues with GenServers.
+Am implementation of queues using GenServers.
 
 ## Bash Commands <a name = "bash_commands"></a>
 
